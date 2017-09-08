@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="zuweie.bankoo.co.helloworld.MainActivity">
+
+    <Button
+        android:id="@+id/start_a_btn"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:text="启动 A Activity"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/start_a_result_btn"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:text="启动 A For result"
+        android:layout_below="@+id/start_a_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/start_a_implicit_btn"
+        android:text="隐式启动 A Activity"
+        android:layout_below="@+id/start_a_result_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_below="@+id/start_a_implicit_btn"
+        android:id="@+id/start_widget_btn"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="启动 控件"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_a_btn"
+        android:layout_alignStart="@+id/start_a_btn"
+        android:layout_below="@+id/start_widget_btn"
+        android:layout_marginTop="23dp"
+        android:text="listview" />
+</RelativeLayout>
